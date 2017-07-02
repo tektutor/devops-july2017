@@ -1,0 +1,16 @@
+---
+# This is a comment
+- name: This is the first play 
+  hosts: prod 
+
+  tasks:
+    - name: Ping the production servers 
+      debug: msg="First play"
+
+- name: This is a second play
+  hosts: dev
+
+  tasks:
+    - name: Ping the development servers 
+      ping:
+
